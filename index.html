@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de MACs</title>
+    <link rel="stylesheet" href="estilos.css">
+
+
+
+</head>
+
+<body>
+    <header>
+        <h1>REGISTRO MACs IES GREGORIO PRIETO</h1>
+    </header>
+    <main>
+        <form action="">
+            <div id="datosPersona">
+                <div id="nombreYclase">
+                    <label for="name">Introduce tu nombre:</label>
+                    <input type="text">
+                    <label for="clase">Selecciona la clase</label>
+                    <select name="clase" id="clases">
+                        <option default selected disabled>clase</option>
+                        <option value="1-DAW">1-DAW</option>
+                        <option value="1-DAM">1-DAM</option>
+                        <option value="2-DAW">2-DAW</option>
+                        <option value="2-DAM">2-DAM</option>
+                    </select>
+                </div>
+                <br>
+                <div id="rol">
+                    <label for="rol">Selecciona tu rol</label><br>
+                    <label for="alumno">alumno</label>
+                    <input type="radio" name="rol">
+                    <label for="profesor">profesor</label>
+                    <input type="radio" name="rol">
+                </div>
+                <br>
+                <div id="mac">
+                    <label for="macs">Introduce tu Macs</label><br>
+                    <input type="text"> <input type="button" value="Enviar">
+                </div>
+            </div>
+            </div>
+    </main>
+    <footer>
+        <div id="infoMacs">
+            <h2>MACS Introducidas</h2>
+            <div id="macs">
+                <div class="registro">
+                    <p>09:04:4D:31:A4</p>
+                    <input type="button" value="editar">
+                    <input type="button" value="borrar">
+                </div>
+                <div class="registro">
+                    <p>09:04:4D:31:A4</p>
+                    <input type="button" value="editar">
+                    <input type="button" value="borrar">
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
