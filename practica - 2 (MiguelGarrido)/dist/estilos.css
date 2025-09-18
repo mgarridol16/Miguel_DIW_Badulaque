@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1E1E1E;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #4DA6FF;
+    line-height: 1.5;
+}
+
+header {
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #4DA6FF;
+    font-size: xx-large;
+}
+
+main {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+fieldset {
+    border: none;
+    width: 100%;
+    padding: 10px;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+select,
+input[type="text"] {
+    margin: 5px 0 15px 0;
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+
+input[type="button"] {
+    background-color: #4DA6FF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 6px 12px;
+    box-shadow: 0 8px 15px rgb(4, 47, 236);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="button"]:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+input[value="editar"] {
+    background-color: yellow;
+    color: black;
+    box-shadow: 0 8px 15px rgb(213, 250, 2);
+}
+
+input[value="editar"]:hover {
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+}
+
+input[value="borrar"] {
+    background-color: red;
+    color: white;
+    box-shadow: 0 8px 15px rgb(236, 4, 4);
+}
+
+input[value="borrar"]:hover {
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+footer {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.mac-lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 8px;
+    background-color: rgba(182, 187, 187, 0.233);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+.mac-lista h2 {
+    color: #4DA6FF;
+    margin-bottom: 15px;
+}
+
+.registro {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.registro p {
+    color: white;
+    margin: 0;
+}
+
