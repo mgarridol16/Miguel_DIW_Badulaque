@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de MACs</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <h2>REGISTRO MACs IES GREGORIO PRIETO</h2>
+    </header>
+    <aside>
+        <form action="">
+            <div class="nombre">
+                <label for="name">Introduce tu nombre:</label>
+                <input type="text">
+            </div>
+
+            <div class="clase">
+                <label for="clase">Selecciona la clase</label>
+                <select name="clase" class="clases">
+                    <option default selected disabled>clase</option>
+                    <option value="1-DAW">1-DAW</option>
+                    <option value="1-DAM">1-DAM</option>
+                    <option value="2-DAW">2-DAW</option>
+                    <option value="2-DAM">2-DAM</option>
+                </select>
+            </div>
+
+            <div class="rol">
+                <p for="rol">Selecciona tu rol</p>
+                <label for="alumno">alumno</label>
+                <input type="radio" name="rol">
+                <label for="profesor">profesor</label>
+                <input type="radio" name="rol">
+            </div>
+
+            <div class="macs">
+                <label for="macs">Introduce tu Macs</label>
+                <input type="text">
+            </div>
+
+            <input type="button" value="Enviar" class="botton">
+        </form>
+    </aside>
+    <section>
+        <table class="listado">
+            <tr>
+                <th>MACS Introducidas</th>
+            </tr>
+            <tr>
+                <td>
+                    <span>09:04:4D:31:A4</span>
+                    <button class="bottonMacsEdit">✏️</button>
+                    <button class="bottonMacsDelete">❌</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <span>09:04:4D:31:A4</span>
+                    <button class="bottonMacsEdit">✏️</button>
+                    <button class="bottonMacsDelete">❌</button>
+                </td>
+
+            </tr>
+        </table>
+    </section>
+
+    <footer>
+        <p>Registro de MACs - 2 DAW - MIGUEL GARRIDO LEÓN</p>
+    </footer>
+</body>
+
+</html>

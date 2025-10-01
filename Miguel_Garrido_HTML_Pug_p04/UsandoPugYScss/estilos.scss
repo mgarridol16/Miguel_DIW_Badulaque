@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-variant: small-caps;
+}
+
+body {
+    background-color: rgba(247, 245, 245, 0.493);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+footer {
+    background-color: rgb(13, 122, 212);
+    width: 100%;
+    padding: 0.1rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 5rem;
+}
+
+footer {
+    margin-top: auto;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
+    border-radius: 5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.nombre,
+.clase,
+.rol,
+.macs {
+    width: 100%;
+    max-width: 12rem;
+    margin: auto;
+    text-align: center;
+}
+
+.nombre {
+    padding: 1rem 1rem 0;
+}
+
+.clase {
+    padding: 1rem 1rem 0;
+}
+
+.clase label {
+    display: block;
+}
+
+.rol {
+    padding: 1rem 0.5rem 0;
+}
+
+.macs {
+    padding: 1rem 1rem 1rem;
+}
+
+aside {
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding: 1rem;
+}
+
+section {
+    width: 100%;
+    padding: 1rem;
+}
+
+.listado {
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 5rem;
+    padding: 4rem 2%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+td {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+td span {
+    padding: 1rem;
+}
+
+.botton,
+.bottonMacsEdit,
+.bottonMacsDelete {
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.botton {
+    background-color: rgb(13, 122, 212);
+    width: 5rem;
+    padding: 0.5rem;
+    margin: auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.botton:hover {
+    background-color: rgb(30, 144, 255);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.bottonMacsEdit {
+    background-color: rgb(239, 241, 78);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.bottonMacsEdit:hover {
+    background-color: rgb(240, 210, 60);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.bottonMacsDelete {
+    background-color: rgb(212, 59, 13);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.bottonMacsDelete:hover {
+    background-color: rgb(230, 80, 40);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+tr {
+    width: 100%;
+    height: 2rem;
+}
+
+th {
+    font-size: 1.5rem;
+    padding: 0 0 1rem;
+}

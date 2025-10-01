@@ -1,0 +1,27 @@
+aside
+    form(action="")
+        .nombre
+            label(for="name") Introduce tu nombre:
+            input(type="text")
+
+        .clase
+            label(for="clase") Selecciona la clase
+            select.clases(name="clase")
+                option(selected disabled) clase
+                option(value="1-DAW") 1-DAW
+                option(value="1-DAM") 1-DAM
+                option(value="2-DAW") 2-DAW
+                option(value="2-DAM") 2-DAM
+
+        .rol
+            p Selecciona tu rol
+            label(for="alumno") alumno
+            input(type="radio" name="rol")
+            label(for="profesor") profesor
+            input(type="radio" name="rol")
+
+        .macs
+            label(for="macs") Introduce tu Macs
+            input(type="text")
+
+        input.botton(type="button" value="Enviar")
