@@ -13,12 +13,12 @@
     </header>
     <main>
         <form action="">
-            <div id="datosPersona">
-                <div id="nombreYclase">
+            <div class="datosPersona">
+                <div class="nombreYclase">
                     <label for="name">Introduce tu nombre:</label>
                     <input type="text">
                     <label for="clase">Selecciona la clase</label>
-                    <select name="clase" id="clases">
+                    <select name="clase" class="clases">
                         <option default selected disabled>clase</option>
                         <option value="1-DAW">1-DAW</option>
                         <option value="1-DAM">1-DAM</option>
@@ -27,15 +27,15 @@
                     </select>
                 </div>
             
-                <div id="rol">
+                <div class="rol">
                     <label for="rol">Selecciona tu rol</label><br>
                     <label for="alumno">alumno</label>
                     <input type="radio" name="rol">
                     <label for="profesor">profesor</label>
-                    <input type="radio" name="rol">
+                    <input type="radio" name="rol"> //cambiar el name no corresponde a el
                 </div>
             
-                <div id="mac">
+                <div class="mac">
                     <label for="macs">Introduce tu Macs</label><br>
                     <input type="text"> <input type="button" value="Enviar">
                 </div>
@@ -43,9 +43,9 @@
             </div>
     </main>
     <footer>
-        <div id="infoMacs">
+        <div class="infoMacs">
             <h2>MACS Introducidas</h2>
-            <div id="macs">
+            <div class="macs">
                 <div class="registro">
                     <p>09:04:4D:31:A4</p>
                     <input type="button" value="editar">
@@ -61,3 +61,6 @@
     </footer>
 </body>
 </html>
+
+//No utilizar tantos DIVs
+//PENSAR EN diseños siempre en bloques

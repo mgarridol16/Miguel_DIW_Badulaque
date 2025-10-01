@@ -11,7 +11,7 @@ main {
     width: 100%;
     color: #4DA6FF;
 }
-#datosPersona {
+.datosPersona {
     text-align: center;
     align-items: center;
     align-content: center;
@@ -28,7 +28,7 @@ body{
     margin: 0;
 }
 
-#nombreYclase{
+.nombreYclase{
 display: flex;
 text-align: center;
 align-items: center;
@@ -36,16 +36,16 @@ align-content: center;
 margin: auto;
 padding: 10px;
 }
-#nombreYclase label[for="clase"]{
+.nombreYclase label[for="clase"]{
 margin-left: 50px;
 }
-
-#rol label[for="profesor"] {
+//EVITAR MARGENES CASI SIEMPRE
+.rol label[for="profesor"] {  //NO HACER SELECTORES TAN ESPECIFICOS SI NOS ALGO ESTARIA MAL
 margin-left: 20px;
 
 }
 
-#infoMacs{
+.infoMacs{
 display: flex;
 justify-content: center;
 align-items: center;
@@ -59,7 +59,7 @@ cursor: pointer;
 box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); 
 background-color: rgba(182, 187, 187, 0.233);
 }
-#macs {
+.macs {
     display: flex;
     flex-direction: column; 
     gap: 10px; 
@@ -73,7 +73,7 @@ background-color: rgba(182, 187, 187, 0.233);
 
 
 
-#macs input[value="editar"]{
+.macs input[value="editar"]{
     background-color: yellow;
     color: black;
     margin-left: 10px;
@@ -86,11 +86,11 @@ background-color: rgba(182, 187, 187, 0.233);
     box-shadow: 0 8px 15px rgb(213, 250, 2); 
     transition: all 0.3s ease; 
 }
-#macs input[value="editar"]:hover{
+.macs input[value="editar"]:hover{
     transform: translateY(-4px); 
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4); 
 }
-#macs input[value="borrar"]{
+.macs input[value="borrar"]{
     background-color: red;
     color: white;
     margin-left: 10px;
@@ -101,7 +101,7 @@ background-color: rgba(182, 187, 187, 0.233);
     cursor: pointer;
     box-shadow: 0 8px 15px rgb(236, 4, 4); 
 }
-#macs input[value="borrar"]:hover{
+.macs input[value="borrar"]:hover{
     transform: translateY(-4px); 
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4); 
 }
@@ -114,7 +114,7 @@ body{
 }
 p{color: white;}
 
-#mac input[value="Enviar"]{
+.mac input[value="Enviar"]{
     background-color: #4DA6FF;
     color: white;
     padding: auto;
@@ -123,7 +123,7 @@ p{color: white;}
     cursor: pointer;
     box-shadow: 0 8px 15px rgb(4, 47, 236); 
 }
-#mac input[value="Enviar"]:hover{
+.mac input[value="Enviar"]:hover{
     transform: translateY(-4px); 
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4); 
 }

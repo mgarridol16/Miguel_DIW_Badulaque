@@ -1,0 +1,47 @@
+extends layout
+
+block opciones
+    form(action="")
+        fieldset
+            legend Datos de la persona
+
+            label(for="name") Introduce tu nombre:
+            input#name(type="text" name="name")
+
+            label(for="clases") Selecciona la clase
+            select#clases(name="clase")
+                option(disabled, selected) clase
+                option(value="1-DAW") 1-DAW
+                option(value="1-DAM") 1-DAM
+                option(value="2-DAW") 2-DAW
+                option(value="2-DAM") 2-DAM
+
+        fieldset
+            legend Rol
+            label(for="alumno")
+                input#alumno(type="radio" name="rol")
+                | Alumno
+
+            label(for="profesor")
+                input#profesor(type="radio" name="rol")
+                | Profesor
+
+        fieldset
+            legend Dirección MAC
+            label(for="macs") Introduce tu MAC:
+            input#macs(type="text" name="macs")
+            input(type="button" value="Enviar")
+
+block macs
+    section.mac-lista
+        h2 MACs Introducidas
+
+        article.registro
+            p 09:04:4D:31:A4
+            input(type="button" value="editar")
+            input(type="button" value="borrar")
+
+        article.registro
+            p 09:04:4D:31:A4
+            input(type="button" value="editar")
+            input(type="button" value="borrar")
