@@ -1,0 +1,60 @@
+@use '_mixins.scss';
+
+    @media (min-width: 550px) {
+
+    .container-fluid {
+        width: 100%;
+    }
+
+    .desaparecer {
+        display: none;
+    }
+
+    .aparecer {
+        display: block;
+    }
+}
+
+    @media (min-width: 750px) {
+        .container {
+            width: 80%;
+        }
+
+        .container-fluid {
+            width: 100%;
+        }
+
+        .desaparecer-lg {
+            display: none;
+        }
+
+        .aparecer-lg {
+            display: block;
+        }
+
+        .column,
+        .columns {
+            margin-left: 4%;
+        }
+
+        .column:first-child,
+        .columns:first-child {
+            margin-left: 0;
+        }
+
+        @include generar-columns("lg");
+
+        .one-lg-third.column {
+            width: 30.6666666667%;
+        }
+
+        .two-lg-thirds.column {
+            width: 65.3333333333%;
+        }
+
+        .one-lg-half.column {
+            width: 48%;
+        }
+
+
+    }
