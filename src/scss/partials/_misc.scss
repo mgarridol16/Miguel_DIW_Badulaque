@@ -1,0 +1,153 @@
+@use 'variables';
+
+body {
+    font-family: var(--fuenteCuerpo);
+    color: var(--colorCuerpo);
+
+
+}
+
+.fondo {
+    background-image: url('../../images/fondo.jpg');
+
+    /* Ajustes comunes */
+    background-size: cover;
+    /* Hace que la imagen cubra toda la pantalla */
+    background-repeat: no-repeat;
+    /* Evita que se repita */
+    background-position: center;
+    /* Centra la imagen */
+    background-attachment: fixed;
+}
+
+.fondo2 {
+    background-image: url('../../images/fondo2.png');
+
+    /* Ajustes comunes */
+    background-size: cover;
+    /* Hace que la imagen cubra toda la pantalla */
+    background-repeat: no-repeat;
+    /* Evita que se repita */
+    background-position: center;
+    /* Centra la imagen */
+    background-attachment: fixed;
+}
+
+// 2. Títulos y Sombras
+h1,
+h2,
+h3 {
+    font-family: var(--fuenteTitulos);
+    color: var(--colorTitulos);
+    text-align: center;
+}
+
+.titulo {
+
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.titulo2 {
+    width: 100%;
+    color: var(--colorPrincipal);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.texto {
+    width: 100%;
+    color: var(--colorTextoPrincipal);
+    font-family: var(--fuenteEstructural);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    margin-bottom: 20px;
+
+
+}
+
+// 3. Estilo del Contenido Principal (main)
+main {
+    background-color: white;
+    box-shadow: 0px 4px 8px var(--sombraPrincipal);
+    border-radius: 15px;
+}
+
+.main-content {
+    width: 85%;
+    /* Podría ser un poco más ancho */
+    max-width: 900px;
+    /* Para que no se estire demasiado en pantallas grandes */
+    margin: 40px auto;
+    /* Más margen superior/inferior */
+    padding: 40px;
+    /* Más espacio interno para el contenido */
+    border-radius: 20px;
+    /* Bordes más redondeados */
+    background-color: rgba(255, 255, 255, 0.85);
+    /* Un poco más opaco para mayor legibilidad */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    /* Una sombra más pronunciada y suave */
+    border: none;
+    /* Eliminar el borde si no lo quieres */
+}
+
+// 4. Botones y Elementos Reutilizables
+.button-principal {
+    background-color: var(--colorPrincipal);
+    border-color: rgb(255, 251, 251);
+    box-shadow: 0px 4px 8px rgba(241, 236, 241, 0.404);
+    color: white;
+    border-radius: 15px;
+}
+
+.button-principal:hover {
+    background-color: rgba(254, 255, 251, 0.87);
+    border-color: rgb(252, 255, 250);
+    color: #f0dfff;
+}
+
+.imagenesBadu {
+    border-radius: 15px;
+    box-shadow: var(--sombraPrincipal);
+}
+
+.imagenesAmigos {
+    border-radius: 100px;
+    box-shadow: var(--sombraPrincipal);
+}
+
+.contenedorImagenes {
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.section-description {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-content {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    text-align: justify;
+    color: black;
+}
+
+.contenedorAmigos {
+    padding: 12px;
+    margin-bottom: 20px;
+}
+
+.icono {
+    max-width: 3rem;
+}
