@@ -1,19 +1,5 @@
-@use '_mixins.scss';
+@use '_mixins.scss' as *;
 
-    @media (min-width: 550px) {
-
-    .container-fluid {
-        width: 100%;
-    }
-
-    .desaparecer {
-        display: none;
-    }
-
-    .aparecer {
-        display: block;
-    }
-}
 
     @media (min-width: 750px) {
         .container {
@@ -35,6 +21,11 @@
         .column,
         .columns {
             margin-left: 4%;
+        }
+
+        .column,
+        .columns {
+            margin-left: 0;
         }
 
         .column:first-child,

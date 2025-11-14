@@ -2,15 +2,14 @@ doctype html
 html(lang="en")
     head
         meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
         title El badulaque
-        link(rel="stylesheet", href="/../../../scss/partials/dist/mis_estilos.css")
-        link(href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap", rel="stylesheet")
-    body 
-        header 
+        link(rel="stylesheet" href="../../scss/partials/dist/mis_estilos.css")
+        link(href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet")
+    body.tema-alternativo
+        header
             include _nav.pug
-        main 
-            block content 
-        footer 
+        main.container.fondo2.main-content
+            block content
+        footer
             include _footer.pug
-        

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El badulaque</title>
+    <link rel="stylesheet" href="../../scss/partials/dist/mis_estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
+  </head>
+  <body class="tema-alternativo">
+    <header><div class="container">
+<div class="row">
+<div class="twelve columns titulo"><img class="icono" src="../images/caramelo.png" alt="caramelo">El badulaque</div>
+</div>
+<div class="row">
+<div class="three columns"><a class="button button-principal u-full-width" href="./home.html">Home</a></div>
+<div class="three columns"><a class="button button-principal u-full-width" href="./amigos.html">Amigos</a></div>
+<div class="three columns"><a class="button button-principal u-full-width" href="./peticiones.html">Peticiones</a></div>
+<div class="three columns"><a class="button button-principal u-full-width" href="./encargos.html">Encargos</a></div>
+</div>
+</div>
+    </header>
+    <main class="container fondo2 main-content">
+      <div class="row titulo2">
+        <div class="twelve columns">
+          <h2>¡Queremos Escucharte!</h2>
+          <h3>Sugiere Nuevas Chuches</h3>
+          <p>Ayúdanos a traer los dulces que más te gustan</p>
+        </div>
+      </div>
+      <div class="row contendorImagenes">
+        <form action="/encargos" method="POST">
+          <div class="four columns four-lg columns">
+            <label for="nombreProducto">Nombre del Producto:</label>
+            <input type="text" id="nombreProducto" name="nombreProducto" placeholder="Nombre del producto" required>
+          </div>
+          <div class="four columns four-lg columns">
+            <label for="Marca">Marca del Producto:</label>
+            <input type="text" id="Marca" name="Marca" placeholder="Marca del producto" required>
+          </div>
+          <div class="four columns four-lg columns">
+            <label for="Categoria">Categoría del Producto:</label>
+            <select name="Categoria" id="categoria" required>
+              <option value="" disabled selected>Categoría</option>
+              <option value="Gominolas">Gominolas</option>
+              <option value="Chocolates">Chocolates</option>
+              <option value="Regaliz">Regaliz</option>
+              <option value="Otros">Otros</option>
+            </select>
+          </div>
+          <div class="row contendorImagenes">
+            <h3>¿Dónde lo has visto?</h3>
+            <div class="twelve columns">
+              <label for="Tienda">Inserta la sugerencia de dónde lo has visto:</label>
+              <input type="text" id="Tienda" name="Tienda" placeholder="Sitio" required maxlength="50">
+            </div>
+          </div>
+          <div class="row contendorImagenes">
+            <div class="twelve columns">
+              <label for="correo">Inserta tu correo electrónico para contactarte:</label>
+              <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required maxlength="50">
+            </div>
+          </div>
+          <div class="row contendorImagenes">
+            <div class="twelve columns">
+              <input type="checkbox" id="terminos" name="terminos">
+              <label for="terminos">He leído los términos y condiciones y estoy de acuerdo</label>
+            </div>
+          </div>
+          <div class="row contendorImagenes">
+            <div class="twelve columns">
+              <button class="button-principal" type="submit">Enviar Sugerencia</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer><div class="container">
+<div class="row">
+<div class="twelve columns titulo">&copy; 2025 Todos los Derechos reservados al autor</div>
+</div>
+</div>
+    </footer>
+  </body>
+</html>

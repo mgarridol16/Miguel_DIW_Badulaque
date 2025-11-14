@@ -34,7 +34,7 @@ body {
 }
 
 .fondo {
-  background-image: url("../../images/fondo.jpg");
+  background-image: url("../../pug/images/fondo.jpg");
   /* Ajustes comunes */
   background-size: cover;
   /* Hace que la imagen cubra toda la pantalla */
@@ -46,7 +46,7 @@ body {
 }
 
 .fondo2 {
-  background-image: url("../../images/fondo2.png");
+  background-image: url("../../pug/images/fondo2.jpg");
   /* Ajustes comunes */
   background-size: cover;
   /* Hace que la imagen cubra toda la pantalla */

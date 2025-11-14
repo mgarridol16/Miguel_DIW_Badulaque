@@ -1,42 +1,48 @@
-extends layout.pug
+extends partials/layout.pug
 
 block content
 
-  main.container.fondo2.main-content
-    .row.titulo2
-      .twelve.columns
-        h2 ¡Queremos Escucharte!
-        h3 Sugiere Nuevas Chuches
-        p Ayudanos a traer los dulces que más te gustan
+  .row.titulo2
+    .twelve.columns
+      h2 ¡Queremos Escucharte!
+      h3 Sugiere Nuevas Chuches
+      p Ayúdanos a traer los dulces que más te gustan
+
+  .row.contendorImagenes
+    form(action="/encargos" method="POST")
+      .four.columns.four-lg.columns
+        label(for="nombreProducto") Nombre del Producto:
+        input(type="text" id="nombreProducto" name="nombreProducto" placeholder="Nombre del producto" required)
+
+      .four.columns.four-lg.columns
+        label(for="Marca") Marca del Producto:
+        input(type="text" id="Marca" name="Marca" placeholder="Marca del producto" required)
+
+      .four.columns.four-lg.columns
+        label(for="Categoria") Categoría del Producto:
+        select(name="Categoria" id="categoria" required)
+          option(value="" disabled selected) Categoría
+          option(value="Gominolas") Gominolas
+          option(value="Chocolates") Chocolates
+          option(value="Regaliz") Regaliz
+          option(value="Otros") Otros
+
       .row.contendorImagenes
-        form(action="/encargos" method="POST")
-          .four.columns
-            label(for="Nombre") Nombre del Producto:
-            input(type="text" name="nombreProducto" placeholder="nombre del producto" required)
-          .four.columns
-            label(for="Marca")  Marca del Producto:
-            input(type="text" id="Marca" name="Marca" placeholder="Marca del producto" required)
-          .four.columns
-            label(for="Categoria") Categoria del Producto:
-            select#(name="Cateogira" id="categoria" required)
-              option(value="" disabled selected) categoria
-              option(value="Gominolas") Gominolas
-              option(value="Chocolates") Chocolates
-              option(value="Regaliz") Regaliz
-              option(value="Otros") Otros
-      .row.contendorImagenes
-        h3 ¿Donde lo hasvisto?
+        h3 ¿Dónde lo has visto?
         .twelve.columns
-          label(for="Tienda") Inserta la sugerencia de donde lo has visto:
-          input(type="text" id="Tienda" name="Tienda" placeholder="Sitio" required style="width: 300px; height: 50px; maxlength: 50;")
+          label(for="Tienda") Inserta la sugerencia de dónde lo has visto:
+          input(type="text" id="Tienda" name="Tienda" placeholder="Sitio" required maxlength="50")
+
       .row.contendorImagenes
         .twelve.columns
-          label(for="correo") Insertta tu correo electrónico para contactarte:
-          input(type="email" id="correo" name="correo" placeholder="correo electrónico" required style="width: 300px; height: 50px; maxlength: 50;")
+          label(for="correo") Inserta tu correo electrónico para contactarte:
+          input(type="email" id="correo" name="correo" placeholder="Correo electrónico" required maxlength="50")
+
       .row.contendorImagenes
         .twelve.columns
-          label(for="terminos") He leido los terminos y condiciones y estoy de acuerdo
-          input(type="checkbox"id="terminos" name="terminos")
+          input(type="checkbox" id="terminos" name="terminos")
+          label(for="terminos") He leído los términos y condiciones y estoy de acuerdo
+
       .row.contendorImagenes
         .twelve.columns
           button.button-principal(type="submit") Enviar Sugerencia
