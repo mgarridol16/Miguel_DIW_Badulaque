@@ -2,6 +2,9 @@
 @mixin generar-columns ( $dimension){
     $i : 0;
 
+    .one-#{$dimension}.column{
+        width: 4.66666666667%;
+    }
     @each $tam in one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve {
         .#{$tam}-#{$dimension}.columns{
             width: 4.66666666667% + $i*8.66666666667%;
