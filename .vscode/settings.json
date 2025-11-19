@@ -1,4 +1,9 @@
 {
+<<<<<<< HEAD
   "compile-hero.disable-compile-files-on-did-save-code": false,
   "liveServer.settings.port": 5501
 }
+=======
+    "compile-hero.disable-compile-files-on-did-save-code": false
+}
+>>>>>>> 1b58fb2a9a59f6a7a6078131adf656edc524e425
